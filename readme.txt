@@ -1,4 +1,4 @@
-Git is a version control system.
+
 Git is free software.
 $(".qianggouye .qianggouye1 li").each(function(){
 		$(this).hover(function(){
