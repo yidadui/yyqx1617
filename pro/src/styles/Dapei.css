@@ -2,4 +2,75 @@
   height:9vh;
   font:normal 3vh/9vh "黑体";
   text-align: center;
+  border-bottom:0.1vh solid #ccc;
+  box-shadow: 0 0.1vh 0.2vh 0.2vh #eee;
+}
+.ld-sect{
+  flex:1;
+  overflow:auto;
+}
+.ld-sect h2{
+  font:normal  3vh/6vh "微软雅黑";
+  margin-left:3vw;
+}
+.Dapei{
+  flex:1;
+  display: flex;
+flex-direction: column;
+-webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.ld-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom:1vh solid #f7f7f7;
+}
+.ld-tag{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:14vh;
+  width:21vw;
+  color:rgb(33, 34, 42);
+  font:normal 2.4vh/4vh "黑体";
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.ld-tag img{
+  height:10vh;
+  width:18vw;
+  background: #ccc;
+}
+.ld-jx h2{
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+  font:normal 3vh/8vh "微软雅黑";
+  text-align: center;
+}
+.ld-jx h2 span{
+  margin-left:1vw;
+  font:normal 2.5vh/8vh "微软雅黑";
+  color:rgba(59, 61, 65, 0.36);
+}
+.ld-jx article{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.ld-jx article img{
+  background: #ccc;
+}
+.detail-tag{
+  color:#000;
+}
+.ld-jx article dl{
+  width:47vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ld-jx article dd{
+  font:normal 2vh/3vh "微软雅黑";
+  height:3vh;
 }
