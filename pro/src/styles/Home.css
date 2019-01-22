@@ -1,0 +1,20 @@
+header{
+	height:10vh;
+	background:#61DAFB;
+}
+.Home{
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	
+}
+section{
+	flex: 1;
+		/*overflow: auto;*/
+		overflow: hidden;
+}
+
+ul li{
+	height:20vh;
+	border-bottom:1px solid #61DAFB;
+}
