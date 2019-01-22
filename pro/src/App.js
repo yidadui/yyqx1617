@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Danpin from './components/Danpin';
 import Dapei from './components/Dapei';
 import Wode from './components/Wode';
+import Login from './components/Login';
+import Register from './components/Register';
 import './styles/iconfont.css';
 class App extends Component {
   render() {
@@ -21,7 +23,8 @@ class App extends Component {
 		        <Route path="/danpin" component={Danpin}></Route>
 		        <Route path="/dapei" component={Dapei}></Route>
 		        <Route path="/wode" component={Wode}></Route>
-		        
+						<Route path="/login" component={Login}></Route>
+						<Route path="/register" component={Register}></Route>
 		        <Redirect to="/home"/>
 		        </Switch>
       	{/*</section>*/}
