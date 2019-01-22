@@ -1,20 +1,83 @@
 .jhe{
 	height:9vh;
-	background:#61DAFB;
+	border-bottom:1px solid #000;
+}
+.jhe span{
+	font-size: 9vw;
+	position: absolute;
+	top:1.5vh;
+	left:2vw;
+}
+.jhe img{
+	width:20vw;
+	height:7vh;
+	position: absolute;
+	top: 1vh;
+	left:40vw;
 }
 .Home{
 	height:100vh;
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 .jse{
 	flex: 1;
-		/*overflow: auto;*/
-		overflow: hidden;
+	/*overflow: auto;*/
+	background:#f7f7f7;
+	
+	overflow: hidden;
 }
+.jhuo{
+	height: 30vh;
+	background:#fff;
+	margin-top:2vh;
+	
+}
+.jhuo h1{
+	font-weight: 100;
+	text-align: center;
+	line-height: 12vh;
+}
+.jtu{
+	padding:0 2vw;
+	display: flex;
 
-.juu li{
-	height:20vh;
-	border-bottom:1px solid #61DAFB;
+	justify-content: space-around;
+}
+.jtu img{
+	width:45vw;
+	height:16vh;
+}
+.jdapei{
+	height:65vh;
+	/*background:#F0AD4E;*/
+	background:#fff;
+	margin-top:2vh;
+	
+}
+.jdapei h1{
+	font-weight: 100;
+	text-align: center;
+	line-height: 12vh;
+}
+.jdapei img{
+	height:21vh;
+	width:100%;
+}
+.jul{
+	width:260vw;
+	overflow: hidden;
+}
+.jul li{
+	float: left;
+	width:30vw;
+	height:25vh;
+	background:aquamarine;
+	margin-left:2vw;
+}
+.jul li img{
+	height:25vh;
+}
+.juls{
+	overflow: hidden;
 }
