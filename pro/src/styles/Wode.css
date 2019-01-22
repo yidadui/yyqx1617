@@ -1,0 +1,110 @@
+
+.Wode{
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+
+
+.z-my{
+    height: 9vh;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+.z-my span{
+    display: flex;
+    align-items: center;
+    color: #0d0d0d;
+    justify-content: center
+}
+.z-my b{
+    position: absolute;
+    top: auto;
+    right: 3vh;
+}
+.z-sec{
+    flex: 1;
+    overflow: hidden;
+}
+.z-sec .z-center{
+    padding: 2vh;
+    height: 100%;
+}
+.z-sec .z-center nav{
+    background: #484a5f;
+    height: 30vh;
+    
+}
+.z-sec .z-center nav .z-login{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+.z-sec .z-center nav .z-login span:first-child{
+    font-size: 8vh;
+}
+
+.z-sec .z-center nav .z-login span:last-child{
+    font-size: 1vh;
+    margin-top: 1vh
+}
+.z-sec .z-center h4{
+    margin-top: 5vh;
+}
+.z-sec .z-serve{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+.z-sec .z-serve .z-fuwu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #484a5f;
+
+}
+.z-sec .z-serve .z-fuwu span:first-child{
+    font-size: 7vh;
+    color: #d3ae81;
+}
+.z-sec .z-serve .z-fuwu span:last-child{
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+.z-sec .z-center .z-tolls{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.z-sec .z-center .z-tolls .z-fuwu{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+     color: #8a8d9c;
+}
+.z-sec .z-center .z-tolls .z-fuwu span:first-child{
+   font-size: 5vh;
+}
+.z-sec .z-center .z-tolls .z-fuwu span:last-child{
+    font-size: 2vh;
+    margin-top: 1vh;
+ }
+
+
+
+
+
+
+
