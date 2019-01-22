@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
 import Footer from './Footer';
-import '../styles/Danpin.css';
+
 class Danpin extends Component {
   render() {
     return (
