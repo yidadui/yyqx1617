@@ -1,20 +1,19 @@
-.jhe{
-	height:9vh;
-	background:#61DAFB;
-}
-.Home{
+.Danpin{
 	height:100vh;
 	display: flex;
 	flex-direction: column;
 	
 }
-.jse{
+section{
 	flex: 1;
-		/*overflow: auto;*/
-		overflow: hidden;
+	overflow: auto;
+		
 }
-
-.juu li{
+header{
+	height:9vh;
+	background:#61DAFB;
+}
+ul li{
 	height:20vh;
 	border-bottom:1px solid #61DAFB;
 }

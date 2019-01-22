@@ -1,0 +1,19 @@
+footer{
+	height:8.1vh;
+}
+.foo{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.6vh;
+	
+}
+.foo span:nth-child(1){
+	font-size:6.5vw;
+}
+.foo span:nth-child(2){
+	font-size:3.5vw;
+}
+.jiao{
+	display: flex;
+	flex-direction: column;
+}

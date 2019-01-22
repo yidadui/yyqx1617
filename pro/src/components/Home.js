@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import Footer from './Footer';
 import '../styles/Home.css';
 import IScroll from 'iscroll/build/iscroll-probe';
 import ReactIScroll from 'reactjs-iscroll';
-class Home extends Component {
+
+class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-        <header>
+        <header className="jhe">
         
         </header>
-        <section>
-        	<ul>
+        <section className="jse">
+        	<ul className="juu">
         		<li>1</li>
         		<li>1</li>
         		<li>1</li>
@@ -28,6 +30,7 @@ class Home extends Component {
         		<li>1</li>
         	</ul>
         </section>
+        <Footer/>
       </div>
     );
   }
