@@ -7,15 +7,16 @@ import Dapei from './components/Dapei';
 import Wode from './components/Wode';
 import Login from './components/Login';
 import Register from './components/Register';
+import Detail from './components/detail';
+import Chaopin from './components/Chaopin';
 import './styles/iconfont.css';
 class App extends Component {
   render() {
     return (
     	<Router>
       <div className="App">
-      
-      
-      	
+
+
       	{/*<section>*/}
 
       		<Switch>
@@ -25,11 +26,13 @@ class App extends Component {
 		        <Route path="/wode" component={Wode}></Route>
 						<Route path="/login" component={Login}></Route>
 						<Route path="/register" component={Register}></Route>
+						<Route path="/detail/:id" component={Detail}></Route>
+            <Route path="/chaopin" component={Chaopin}></Route>
 		        <Redirect to="/home"/>
 		        </Switch>
       	{/*</section>*/}
-      	
-        
+
+
       </div>
       </Router>
     );

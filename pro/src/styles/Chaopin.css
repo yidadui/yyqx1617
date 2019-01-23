@@ -1,0 +1,38 @@
+.j-ch{
+	height:9vh;
+	border-bottom:1px solid #000;
+	text-align: center;
+	line-height: 9vh;
+}
+.Chaopin{
+	height:100vh;
+	display: flex;
+	flex-direction: column;	
+}
+.j-cse{
+	flex: 1;
+	overflow: auto;
+	/*background:#f7f7f7;*/
+	
+}
+.j-ch span:nth-child(1){
+	font-size:9vw;
+	position: absolute;
+	top:-0.4vh;
+	left:1vw;
+}
+.j-ch span:nth-child(2){
+	font-size:5vw;
+}
+.j-bu{
+	background:#474950;
+	color:#fff;
+	border:0;
+	width:80vw;
+	height:8vh;
+	position: absolute;
+	bottom:20vh;
+	left:10vw;
+	box-shadow:0 3vh 6vw #c9c9c9 ;
+	font-size: 3.5vw;
+}

@@ -1,0 +1,108 @@
+.ld-detail{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+
+}
+.ld-detail header{
+  font:normal 3vh/8vh "微软雅黑";
+  height:8vh;
+  position: fixed;
+  top:0;
+  text-align: center;
+  display: none;
+  width:100vw;
+  z-index: 10;
+  background: #fff;
+}
+.ld-detail b {
+    font:normal 3vh/8vh "微软雅黑";
+  position:fixed;;
+  top:0;
+  left:8vw;
+  z-index: 11;
+}
+.ld-detail strong {
+    font:normal 3vh/8vh "微软雅黑";
+  position:fixed;
+  top:0;
+  right:8vw;
+  z-index: 11;
+}
+.ld-detail section{
+  overflow: auto;
+  flex:1;
+}
+.ld-detail footer{
+  display: flex;
+    justify-content: space-between;
+  height:9vh;
+}
+.ld-detail #swiper-scrollbar{
+  width:80vw;
+  left:10%;
+}
+.ld-detail .swiper-scrollbar-drag{
+  width:20vw;
+}
+.ld-detail .swiper-container{
+  height:50vh;
+}
+.ld-detail .swiper-slide img{
+  height:50vh;
+  width:100vw;
+}
+.detail-msg{
+  height:15vh;
+  padding:4vw;
+}
+.detail-msg p{
+  font:normal  2.3vh/3.4vh "微软雅黑";
+  color:rgb(92, 91, 92);
+  letter-spacing: 0.1vh;
+}
+.detail-msg h3{
+  line-height: 10vh;
+  margin-left: -1vw;
+}
+.detail-box{
+  padding:0 1vw;
+}
+.detail-box h4{
+  padding-left:2vw;
+  font:500 2.6vh/5vh "微软雅黑";
+}
+.detail-box  h4 span{
+  color:#ccc;
+  font-weight: normal;
+  margin-left: 1vw;
+}
+.detail-pic img{
+  width:98vw;
+  margin-top: 0.5vh;
+}
+.ld-detail .footer-left{
+  width:50vw;
+  height:9vh;
+  display: flex;
+}
+.ld-detail .footer-right{
+  text-align: center;
+  width:50vw;
+  height:9vh;
+  background: #464950;
+  font:normal 2.6vh/9vh "微软雅黑";
+  color:#fff;
+}
+.f-xihuan,.f-zhuanfa{
+  width:49vw;
+  height:9vh;
+  font:normal 3vh/9vh "微软雅黑";
+  text-align: center;
+}
+.f-fff{
+  height:9vh;
+  width:2vw;
+  color:#ccc;
+  font:normal 3vh/9vh "微软雅黑";
+}
