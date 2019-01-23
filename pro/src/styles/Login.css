@@ -11,10 +11,12 @@
     align-items: center;
     line-height: 9vh;
     position: relative;
+    font-size: 2vh;
 }
 .z-head span{
     position: absolute;
     left: 3vh;
+    font-size: 2vh;
 }
 .z-login{
     flex: 1;
@@ -57,11 +59,13 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
     width: 90%;
     height: 5vh;
     border-bottom: 1px solid #ccc;
-    padding: 2vh 0
+    padding: 2vh 0;
+    font-size: 2vh;
 }
 .z-login span{
     padding: 0 0 0 2vw;
     color: #5a5a5a;
+    font-size: 2vh;
 }
 .z-login .btn{
     display: flex;
@@ -74,7 +78,8 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
     width: 40vw;
     height: 6vh;
     border-radius: 5px;
-    outline: none
+    outline: none;
+    font-size: 2vh;
 }
 .z-login .btn button:first-child{
     background: white;
