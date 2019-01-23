@@ -18,6 +18,9 @@ class Home extends React.Component {
     imgHeight: 176,
   	}
 	}
+  chao(){
+  	this.props.history.push("/chaopin")
+  }
   render() {
     return (
       <div className="Home">
@@ -62,17 +65,17 @@ class Home extends React.Component {
         	</div>
         	<div className="jdapei">
         		<h1>搭配精选OUTFIT</h1>
-        		<img src={J04}/>
+        		<img src={J04} onClick={this.chao.bind(this)}/>
         		<div className="juls">
 	        		<ul className="jul">
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
-	        			<li><img src={J05}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
+	        			<li><img src={J05} onClick={this.chao.bind(this)}/></li>
 	        		</ul>
         		</div>
         	</div>
