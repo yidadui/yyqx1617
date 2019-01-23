@@ -18,6 +18,12 @@ class Home extends React.Component {
     imgHeight: 176,
   	}
 	}
+  xing(){
+  	this.props.history.push("/xingnan")
+  }	
+  wen(){
+  	this.props.history.push("/guwen")
+  }
   chao(){
   	this.props.history.push("/chaopin")
   }
@@ -59,8 +65,8 @@ class Home extends React.Component {
         	<div className="jhuo">
         		<h1>活动精选EVENT</h1>
         		<div className="jtu">
-        			<img src={J01}/>
-        			<img src={J02}/>
+        			<img src={J01} onClick={this.wen.bind(this)}/>
+        			<img src={J02} onClick={this.xing.bind(this)}/>
         		</div>
         	</div>
         	<div className="jdapei">

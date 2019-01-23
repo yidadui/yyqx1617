@@ -1,0 +1,26 @@
+.j-xh{
+	height:9vh;
+	border-bottom:1px solid #000;
+	text-align: center;
+	line-height: 9vh;
+}
+.Xingnan{
+	height:100vh;
+	display: flex;
+	
+	flex-direction: column;	
+}
+.j-xs{
+	flex: 1;
+	overflow: auto;
+	
+}
+.j-xh span:nth-child(1){
+	font-size:9vw;
+	position: absolute;
+	top:-0.4vh;
+	left:1vw;
+}
+.j-xh span:nth-child(2){
+	font-size:5vw;
+}
