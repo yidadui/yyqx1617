@@ -13,21 +13,21 @@ import $ from 'jquery'
 class Danpin extends Component {
 	constructor(props){
 		super(props)
+		this.state={
+			item:["墨镜","帽子","袜子","手表","墨镜","帽子","袜子","手表"]
+		}
 	}
-	dianji(){
 	
-			$('.outer ul').slideToggle()
-	
-		
-	}
 	componentDidMount(){
 		$('.outer ul').hide()
-		
-  	var myscroll=new IScroll('section',{
+		$('.jieshao').click(function(){
+			$(this).next().find($('ul')).stop().slideToggle().parent().siblings().find($('ul')).stop().slideUp()
+		})
+  	{/*var myscroll=new IScroll('section',{
   		click:true,
     	vscrollbars: false,
     	mouseWheel: true,
-  	})
+  	})*/}
   	
   }
   render() {
@@ -36,11 +36,11 @@ class Danpin extends Component {
 				<header className='z-dan'>
 							<span>购物车</span>
               <b>单品</b>
-							<em>放</em>
+							
 				</header>
         <section className="dan">
         	<div className='z-section'>
-						<div className='jieshao' onClick={this.dianji.bind(this)}>
+						<div className='jieshao' >
 								<div className='z-left'>
 									<h2>上衣</h2>
 									<p>潮流新款 休闲帅气</p>
@@ -49,44 +49,117 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						<div className='outer'>
-										<ul>
-											<li>
-												<img src={pic2}/>
-												<span>墨镜</span>
+						
+							<div className='outer'>
+								<ul>
+								{
+									this.state.item.map(function(wz,i){
+										return(
+											<li key={i}>
+											<img src={pic2}/>
+											<span>{wz}</span>
 											</li>
-											<li>
-												<img src={pic2}/>
-												<span>帽子</span>
-											</li>
-											<li>
-												<img src={pic2}/>
-												<span>袜子</span>
-											</li>
-											<li>
-												<img src={pic2}/>
-												<span>手表</span>
-											</li>
-
-
-											<li>
-												<img src={pic2}/>
-												<span>墨镜</span>
-											</li>
-											<li>
-												<img src={pic2}/>
-												<span>帽子</span>
-											</li>
-											<li>
-												<img src={pic2}/>
-												<span>袜子</span>
-											</li>
-											<li>
-												<img src={pic2}/>
-												<span>手表</span>
-											</li>
-										</ul>
+										)										
+									})
+								}	
+								</ul>
+							</div>
+							<div className='jieshao' >
+								<div className='z-left'>
+									<h2>裤子</h2>
+									<p>潮流新款 休闲帅气</p>
 								</div>
+								<div className='z-right'>
+									<img src={pic1}/>
+								</div>
+						</div>
+						
+							<div className='outer'>
+								<ul>
+								{
+									this.state.item.map(function(wz,i){
+										return(
+											<li key={i}>
+											<img src={pic2}/>
+											<span>{wz}</span>
+											</li>
+										)										
+									})
+								}	
+								</ul>
+							</div>
+							<div className='jieshao' >
+								<div className='z-left'>
+									<h2>潮鞋</h2>
+									<p>潮流新款 休闲帅气</p>
+								</div>
+								<div className='z-right'>
+									<img src={pic1}/>
+								</div>
+						</div>
+						
+							<div className='outer'>
+								<ul>
+								{
+									this.state.item.map(function(wz,i){
+										return(
+											<li key={i}>
+											<img src={pic2}/>
+											<span>{wz}</span>
+											</li>
+										)										
+									})
+								}	
+								</ul>
+							</div>
+							<div className='jieshao' >
+								<div className='z-left'>
+									<h2>配饰</h2>
+									<p>潮流新款 休闲帅气</p>
+								</div>
+								<div className='z-right'>
+									<img src={pic1}/>
+								</div>
+						</div>
+						
+							<div className='outer'>
+								<ul>
+								{
+									this.state.item.map(function(wz,i){
+										return(
+											<li key={i}>
+											<img src={pic2}/>
+											<span>{wz}</span>
+											</li>
+										)										
+									})
+								}	
+								</ul>
+							</div>
+							<div className='jieshao' >
+								<div className='z-left'>
+									<h2>护理</h2>
+									<p>潮流新款 休闲帅气</p>
+								</div>
+								<div className='z-right'>
+									<img src={pic1}/>
+								</div>
+						</div>
+						
+							<div className='outer'>
+								<ul>
+								{
+									this.state.item.map(function(wz,i){
+										return(
+											<li key={i}>
+											<img src={pic2}/>
+											<span>{wz}</span>
+											</li>
+										)										
+									})
+								}	
+								</ul>
+							</div>
 						
 					</div>
         </section>

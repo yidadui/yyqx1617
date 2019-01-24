@@ -12,9 +12,14 @@
 }
 
 .z-dan span{
+	font-size: 4vw;
     position: absolute;
     left: 3vh;
     top:auto;
+}
+b{
+	font-size: 5vw;
+	font-weight: 100;
 }
 .z-dan em{
     position: absolute;
@@ -32,7 +37,7 @@
 }
 .dan{
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
    
 }
 .z-section{
