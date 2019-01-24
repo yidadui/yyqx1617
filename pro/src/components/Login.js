@@ -1,19 +1,55 @@
-
-
 import React, { Component } from 'react';
 import '../styles/Login.css';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
+import creatHistory from 'history/createBrowserHistory' ;
+import $ from 'jquery'
 
 
 class Login extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            
+        }
+    }
     register(){
          this.props.history.push('/register')
     }
+    cancle(){
+        const history = creatHistory();
+        history.goBack();
+    }
+    componentDidMount(){
+        console.log(this.refs.ipt.value)
+        $('.username')[0].oninput=function(){
+            console.log("aaa")
+              this.value=this.value.substr(0,11)
+              
+             
+        }
+    }
+    login(){
+        var _this=this;
+        console.log(_this.refs.ipt.value)
+        $.ajax({
+            type:'get',
+            url:'http://jx.xuzhixiang.top/ap/api/login.php',
+            dataType:"json",
+            data:{username:_this.refs.ipt.value,password:_this.refs.ipts.value},
+            success:function(data){
+                if(data.code==1){
+                	alert("登陆成功")
+                	_this.props.history.push('/home')
+                }
+            }
+        })
+    }
+   
     render(){
         return(
             <div className='Login'>
                 <header className='z-head'>
-                    <span>取消</span>
+                    <span onClick={this.cancle.bind(this)}>取消</span>
                     <b>登陆</b>
                     
                 </header>
@@ -28,11 +64,11 @@ class Login extends Component{
                     </div> 
                     <div className='mima'>
                         <span>密码</span>
-                        <input type='password' ref='ipt' className='password' placeholder='请输入密码'/>
+                        <input type='password' ref='ipts' className='password' placeholder='请输入密码'/>
                     </div>
                     <div className='btn'>
                         <button onClick={this.register.bind(this)}>注册</button> 
-                        <button>登陆</button>
+                        <button onClick={this.login.bind(this)}>登陆</button>
                     </div>
                     
                     

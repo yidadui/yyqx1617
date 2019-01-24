@@ -1,0 +1,155 @@
+
+
+.Cart{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: '微软雅黑';
+}
+
+.c-header{
+    height: 9vh;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 9vh;
+    position: relative;
+}
+
+.c-header b{
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 100
+}
+.c-header span{
+    position: absolute;
+    left: 3vh;
+    font-size: 4vh;
+}
+.c-header em{
+    position: absolute;
+    right: 3vh;
+    font-size: 3vh;
+    font-style: normal;
+}
+
+.c-section{
+    flex: 1;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+
+   
+}
+.c-section ul{
+    width: 90%;
+    margin-top: 1vh;
+}
+.c-section ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    
+}
+.c-section .left{
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-section .left input{
+    width: 5vw;
+    height: 3vh;
+    border-radius: 50%;
+    
+}
+
+.c-section .right{
+    flex: 1;
+    margin-left: 3vw;
+    display: flex;
+}
+.c-section .right .img{
+    width: 30vw;
+    height: 17vh;
+    background: #ccc;
+}
+
+.c-section .right .xinxi{
+    flex: 1;
+    margin-left: 2vh; 
+    flex-direction: column; 
+    justify-content: space-between;
+    display: flex;
+    padding: 1vh;
+    
+}
+ /* .c-section .right .xinxi .top h3{
+   
+
+   
+}  */
+
+.c-section .right .xinxi h3{
+    font-size: 2vh;
+    
+}
+.c-section .right .xinxi h4{
+    font-size: 1vh;
+    margin-top: 1vh;
+}
+.c-section .right .sum{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.c-section .right nav{
+    display: flex;
+    border: 1px solid #ccc;
+    
+}
+.c-section .right nav input{
+    width: 8vw;
+    height: 3vh;
+    outline: none;
+    border: 0;
+    text-align: center;
+}
+
+.c-section .right nav button{
+    width: 8vw;
+    height: 3.6vh;
+    border: 0;
+    outline: 0;
+}
+
+
+.c-footer{
+    height: 9vh;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.c-footer button{
+    width: 33%;
+    height: 100%;
+    background: #fc7967;
+    border: none;
+    color: white;
+    font-size: 3vh;
+}
+.c-footer .total{
+    flex: 1;
+    height: 100%;
+    padding-left: 5%;
+    align-items: center;
+    display: flex;
+}
+.c-footer .total em{
+    font-style: normal;
+}

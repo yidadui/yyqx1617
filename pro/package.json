@@ -31,6 +31,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "reactjs-iscroll": "^0.3.2",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "swiper": "^4.4.6"
   }
 }

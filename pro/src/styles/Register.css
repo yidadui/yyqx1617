@@ -1,0 +1,86 @@
+.Register{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.z-Rhead{
+    height: 9vh;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 9vh;
+    position: relative;
+    font-size: 2vh;
+}
+.z-Rhead span{
+    position: absolute;
+    left: 3vh;
+    font-size: 4vh;
+}
+.z-Regist{
+    flex: 1;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    background: #f7f7f7;
+}
+
+.z-Regist input{
+    border: none;
+    outline: none;
+    width: 40vh;
+    height: 100%;
+    padding-left: 4vw;
+    color: #b3b3b3;
+    background: #f7f7f7 !important
+}
+.z-Regist input:-webkit-autofill { box-shadow: 0 0 0px 1000px #f7f7f7 inset !important;}
+.z-Regist .phone{
+    width: 90%;
+    height: 5vh;
+    border-bottom: 1px solid #ccc;
+    padding: 2vh 0;
+    margin-top: 10vh;
+}
+.z-Regist .pass{
+    width: 90%;
+    height: 5vh;
+    border-bottom: 1px solid #ccc;
+    padding: 2vh 0
+}
+.z-Regist .yzm{
+    width: 90%;
+    height: 5vh;
+    
+    padding: 2vh 0;
+
+}
+.z-Regist .yzm input{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2vh;
+    width: 60vw;
+    height: 3.5vh;
+}
+
+.z-Regist .yzm button{
+    width: 14.3vh;
+    height: 7vh;
+    background: #444;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #444
+}
+
+.z-Regist .sure{
+    margin-top: 2vh;
+    width: 90%;
+    background: #444;
+    border: 1px solid #444;
+    border-radius: 5px;
+    height: 7vh;
+    color: #fff;
+    box-shadow: 1px 1px 7px #444
+}

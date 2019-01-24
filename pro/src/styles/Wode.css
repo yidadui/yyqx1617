@@ -19,12 +19,14 @@
     display: flex;
     align-items: center;
     color: #0d0d0d;
-    justify-content: center
+    justify-content: center;
+    font-size: 2vh;
 }
 .z-my b{
     position: absolute;
     top: auto;
     right: 3vh;
+    font-size: 2vh;
 }
 .z-sec{
     flex: 1;
@@ -58,6 +60,7 @@
 }
 .z-sec .z-center h4{
     margin-top: 5vh;
+    font-size: 2.5vh;
 }
 .z-sec .z-serve{
     display: flex;

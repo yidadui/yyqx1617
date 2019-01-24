@@ -1,0 +1,50 @@
+.j-gh{
+	height:9vh;
+	border-bottom:1px solid #000;
+	text-align: center;
+	line-height: 9vh;
+}
+.Guwen{
+	height:100vh;
+	display: flex;
+	
+	flex-direction: column;	
+}
+.j-gs{
+	flex: 1;
+	/*overflow: auto;*/
+	overflow: hidden;
+	background:#f0f0f0;
+	
+}
+.j-gh span:nth-child(1){
+	font-size:9vw;
+	position: absolute;
+	top:-0.4vh;
+	left:1vw;
+}
+.j-gh span:nth-child(2){
+	font-size:5vw;
+}
+.j-gu li{
+	height:30vh;
+}
+.j-gs img:nth-child(1){
+	width:100%;
+	height:40vh;
+}
+.j-gs img:nth-child(2){
+	width:100%;
+	height:45vh;
+	margin-top:5vh;
+}
+.j-gs img:nth-child(3){
+	width:100%;
+	height:45vh;
+	margin-top:5vh;
+}
+.j-gs img:nth-child(4){
+	width:100%;
+	height:50vh;
+	margin-top:5vh;
+}

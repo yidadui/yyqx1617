@@ -1,0 +1,118 @@
+
+.z-dan{
+    height: 9vh;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 9vh;
+    position: relative;
+    font-size: 2vh;
+    position: relative;
+}
+
+.z-dan span{
+	font-size: 4vw;
+    position: absolute;
+    left: 3vh;
+    top:auto;
+}
+b{
+	font-size: 5vw;
+	font-weight: 100;
+}
+.z-dan em{
+    position: absolute;
+    right: 3vh;
+    top:auto;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.Danpin{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.dan{
+    flex: 1;
+    overflow: auto;
+   
+}
+.z-section{
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    
+   align-items: center
+}
+.dan .jieshao{
+    width: 92%;
+    height: 20vh;
+    margin-top: 2vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap
+}
+
+/* .dan .jieshao .outer{
+    position: absolute;
+        top: 20vh;
+    width: 100%;
+    
+} */
+
+.z-section .outer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.dan .outer li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+.dan .outer li img{
+    width: 12vw;
+    height: 6vh;
+}
+.dan .outer  ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.dan .jieshao .z-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.dan .jieshao .z-left h2{
+    color: #db4d0c;
+    font-size: 4vh;
+}
+
+.dan .jieshao .z-left p{
+    color: #bdbdbf;
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+
+.dan .jieshao .z-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.dan .jieshao .z-right img{
+    height: 80%;
+}
