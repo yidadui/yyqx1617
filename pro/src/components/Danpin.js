@@ -17,7 +17,13 @@ class Danpin extends Component {
 			item:["墨镜","帽子","袜子","手表","墨镜","帽子","袜子","手表"]
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+	dianji(){
+			$('.outer ul').slideToggle()
+	}
+>>>>>>> c456ef4367381ce3bf76e73f37abd487180a5206
 	componentDidMount(){
 		$('.outer ul').hide()
 		$('.jieshao').click(function(){
