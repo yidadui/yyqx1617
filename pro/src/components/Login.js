@@ -1,8 +1,6 @@
-
-
 import React, { Component } from 'react';
 import '../styles/Login.css';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import creatHistory from 'history/createBrowserHistory' ;
 import $ from 'jquery'
 
@@ -35,12 +33,14 @@ class Login extends Component{
         console.log(_this.refs.ipt.value)
         $.ajax({
             type:'get',
-            url:'',
-            async:false,
+            url:'http://jx.xuzhixiang.top/ap/api/login.php',
             dataType:"json",
             data:{username:_this.refs.ipt.value,password:_this.refs.ipts.value},
             success:function(data){
-                
+                if(data.code==1){
+                	alert("登陆成功")
+                	_this.props.history.push('/home')
+                }
             }
         })
     }

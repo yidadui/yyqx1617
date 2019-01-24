@@ -1,8 +1,8 @@
-
+import {BrowserRouter as Router} from 'react-router-dom';
 import React, { Component } from 'react';
 import creatHistory from 'history/createBrowserHistory' ;
 import '../styles/Register.css';
-
+import $ from 'jquery'
 
 class Register extends Component{
     can(){
@@ -13,11 +13,25 @@ class Register extends Component{
 
     }
     sure(){
-
+    	var _this=this;
+		$.ajax({
+		    type:"get",
+		    url:"http://jx.xuzhixiang.top/ap/api/reg.php",
+		    dataType:'json',
+		    data:{username:_this.refs.ipt.value,password:_this.refs.ipt1.value},
+		    success:function(data){
+		    	console.log(data)
+		    	if(data.code==1){
+		    		alert("注册成功")
+		    		_this.props.history.push("/login")
+		    	}
+		    		
+		    	
+		    }
+		})
     }
     componentDidMount(){
-        let phoneCodeVerification = /^[1][3,4,5,7,8][0-9]{9}$/;
-        
+        let phoneCodeVerification = /^[1][3,4,5,7,8][0-9]{9}$/;    
     }
     render(){
         
@@ -32,11 +46,10 @@ class Register extends Component{
                         <input type='text' ref='ipt' className='username' placeholder='请输入手机号'/>
                     </div>
                     <div className='pass'>
-                        <input type='password' ref='ipt' className='username' placeholder='请输入密码'/>
+                        <input type='password' ref='ipt1' className='username' placeholder='请输入密码'/>
                     </div>
                     <div className='yzm'>
-                        <input type='text' ref='ipt' className='yan' placeholder='请输入验证码'/>
-                        <button onClick={this.tap.bind(this)}>验证码</button>
+
                     </div>
                     <button onClick={this.sure.bind(this)} className='sure'>确定</button>
                     
