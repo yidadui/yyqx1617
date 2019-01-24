@@ -15,10 +15,7 @@ class Danpin extends Component {
 		super(props)
 	}
 	dianji(){
-	
 			$('.outer ul').slideToggle()
-	
-		
 	}
 	componentDidMount(){
 		$('.outer ul').hide()

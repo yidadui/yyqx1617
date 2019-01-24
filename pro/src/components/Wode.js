@@ -10,7 +10,7 @@ import ReactIScroll from 'reactjs-iscroll';
 
 
 class Wode extends Component {
-
+  
   componentDidMount(){
   	var myscroll=new IScroll('section',{
   		click:true,

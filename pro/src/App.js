@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Detail from './components/detail';
 import Chaopin from './components/Chaopin';
+import Cart from './components/Cart';
 import './styles/iconfont.css';
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
 						<Route path="/register" component={Register}></Route>
 						<Route path="/detail/:id" component={Detail}></Route>
             <Route path="/chaopin" component={Chaopin}></Route>
+						<Route path="/cart" component={Cart}></Route>
 		        <Redirect to="/home"/>
 		        </Switch>
       	{/*</section>*/}
