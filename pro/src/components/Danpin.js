@@ -18,6 +18,10 @@ class Danpin extends Component {
 		}
 	}
 	componentDidMount(){
+		let _this=this;
+		$('.ll').click(function(){
+			_this.props.history.push('/dapei')
+		})
 		$('.outer ul').hide()
 		$('.jieshao').click(function(){
 			$(this).next().find($('ul')).stop().slideToggle().parent().siblings().find($('ul')).stop().slideUp()
@@ -54,7 +58,7 @@ class Danpin extends Component {
 								{
 									this.state.item.map(function(wz,i){
 										return(
-											<li key={i}>
+											<li key={i} className="ll">
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
@@ -78,7 +82,7 @@ class Danpin extends Component {
 								{
 									this.state.item.map(function(wz,i){
 										return(
-											<li key={i}>
+											<li key={i} className="ll">
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
@@ -102,7 +106,7 @@ class Danpin extends Component {
 								{
 									this.state.item.map(function(wz,i){
 										return(
-											<li key={i}>
+											<li key={i} className="ll">
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
@@ -126,7 +130,7 @@ class Danpin extends Component {
 								{
 									this.state.item.map(function(wz,i){
 										return(
-											<li key={i}>
+											<li key={i} className="ll">
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
@@ -150,7 +154,7 @@ class Danpin extends Component {
 								{
 									this.state.item.map(function(wz,i){
 										return(
-											<li key={i}>
+											<li key={i} className="ll">
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
