@@ -1,4 +1,4 @@
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import React, { Component } from 'react';
 import creatHistory from 'history/createBrowserHistory' ;
 import '../styles/Register.css';
@@ -25,21 +25,21 @@ class Register extends Component{
 		    		alert("注册成功")
 		    		_this.props.history.push("/login")
 		    	}
-		    		
-		    	
+
+
 		    }
 		})
     }
     componentDidMount(){
-        let phoneCodeVerification = /^[1][3,4,5,7,8][0-9]{9}$/;    
+        let phoneCodeVerification = /^[1][3,4,5,7,8][0-9]{9}$/;
     }
     render(){
-        
+
         return(
             <div className='Register'>
                  <header className='z-Rhead'>
                     <span onClick={this.can.bind(this)}>&lt;</span>
-                    <b>注册</b>    
+                    <b>注册</b>
                 </header>
                 <section className='z-Regist'>
                     <div className='phone'>
@@ -52,7 +52,7 @@ class Register extends Component{
 
                     </div>
                     <button onClick={this.sure.bind(this)} className='sure'>确定</button>
-                    
+
                 </section>
             </div>
         )

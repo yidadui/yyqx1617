@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
 import Footer from './Footer';
 import '../styles/Danpin.css';
 import IScroll from 'iscroll/build/iscroll-probe';
@@ -17,6 +17,9 @@ class Danpin extends Component {
 			item:["墨镜","帽子","袜子","手表","墨镜","帽子","袜子","手表"]
 		}
 	}
+	gocart(){
+		this.props.history.push("/Cart");
+	}
 	componentDidMount(){
 		$('.outer ul').hide()
 		$('.jieshao').click(function(){
@@ -27,15 +30,19 @@ class Danpin extends Component {
     	vscrollbars: false,
     	mouseWheel: true,
   	})*/}
-  	
+
   }
   render() {
+		var sty1={
+			fontSize:"2vh",
+			lineHeight:"4vh",
+		}
     return (
       <div className="Danpin">
 				<header className='z-dan'>
-							<span>购物车</span>
+							<span className="iconfont" style={sty1} onClick={this.gocart.bind(this)}>&#xe503;</span>
               <b>单品</b>
-							
+
 				</header>
         <section className="dan">
         	<div className='z-section'>
@@ -48,7 +55,7 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						
+
 							<div className='outer'>
 								<ul>
 								{
@@ -58,9 +65,9 @@ class Danpin extends Component {
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
-										)										
+										)
 									})
-								}	
+								}
 								</ul>
 							</div>
 							<div className='jieshao' >
@@ -72,7 +79,7 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						
+
 							<div className='outer'>
 								<ul>
 								{
@@ -82,9 +89,9 @@ class Danpin extends Component {
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
-										)										
+										)
 									})
-								}	
+								}
 								</ul>
 							</div>
 							<div className='jieshao' >
@@ -96,7 +103,7 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						
+
 							<div className='outer'>
 								<ul>
 								{
@@ -106,9 +113,9 @@ class Danpin extends Component {
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
-										)										
+										)
 									})
-								}	
+								}
 								</ul>
 							</div>
 							<div className='jieshao' >
@@ -120,7 +127,7 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						
+
 							<div className='outer'>
 								<ul>
 								{
@@ -130,9 +137,9 @@ class Danpin extends Component {
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
-										)										
+										)
 									})
-								}	
+								}
 								</ul>
 							</div>
 							<div className='jieshao' >
@@ -144,7 +151,7 @@ class Danpin extends Component {
 									<img src={pic1}/>
 								</div>
 						</div>
-						
+
 							<div className='outer'>
 								<ul>
 								{
@@ -154,12 +161,12 @@ class Danpin extends Component {
 											<img src={pic2}/>
 											<span>{wz}</span>
 											</li>
-										)										
+										)
 									})
-								}	
+								}
 								</ul>
 							</div>
-						
+
 					</div>
         </section>
         <Footer/>

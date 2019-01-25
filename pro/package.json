@@ -33,5 +33,6 @@
     "reactjs-iscroll": "^0.3.2",
     "redux": "^4.0.1",
     "swiper": "^4.4.6"
-  }
+  },
+  "homepage":"."
 }

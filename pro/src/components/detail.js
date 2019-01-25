@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch,withRouter} from 'react-router-dom';
 import '../styles/detail.css';
 import $ from 'jquery';
 import Swiper from 'swiper';
 import '../styles/swiper-3.4.2.min.css';
+import  Action from "../redux/Action";
+import  Store from "../redux/Store";
 class Detail extends React.Component{
   constructor(props){
     super(props);
@@ -11,11 +13,22 @@ class Detail extends React.Component{
       show:0,
     };
   }
+  atl(i){
+      Store.dispatch(Action.atl(i));
+    alert("添加成功");
+  }
+  goback(){
+      this.props.history.goBack();
+  }
+  gocart(){
+      this.props.history.push("/Cart");
+  }
   render(){
+    var _this=this;
     return(
       <div className="ld-detail">
       <header></header>
-      <strong>购物车</strong><b>上一页</b>
+      <strong><span className="iconfont" onClick={this.gocart.bind(this)}>&#xe503;</span></strong><b onClick={this.goback.bind(this)}>&lt;</b>
       <section>
       <div className="swiper-container">
     <div className="swiper-wrapper">
@@ -45,7 +58,7 @@ class Detail extends React.Component{
       <div className="f-fff">|</div>
       <div className="f-zhuanfa">转发</div>
       </div>
-      <NavLink to="/home" className="footer-right">去淘宝购买</NavLink>
+      <span className="footer-right" onClick={_this.atl.bind(_this,_this.props.match.params.id)}>加入购物车</span>
       </footer>
       </div>
     )
@@ -54,18 +67,13 @@ class Detail extends React.Component{
     var _this=this;
     $('section').on('scroll',function(){
       if(this.scrollTop>400){
-        if(_this.state.show==0){
-          console.log(11);
             $('.ld-detail header').stop().fadeIn("normal",function(){
               _this.setState({show:1});
             });
-        }
       }else{
-        if(_this.state.show){
           $('.ld-detail header').stop().fadeOut("normal",function(){
               _this.setState({show:0});
           });
-        }
       }
     })
       var mySwiper = new Swiper ('.swiper-container', {
@@ -81,4 +89,5 @@ class Detail extends React.Component{
   })
   }
 }
-export default Detail;
+
+export default withRouter(Detail);

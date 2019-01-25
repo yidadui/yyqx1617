@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import {HashRouter as Router,Route} from 'react-router-dom';
 import '../styles/Xingnan.css';
 import J10 from '../img/j10.png';
 import J11 from '../img/j11.png';
@@ -21,7 +21,7 @@ class Xingnan extends Component {
         <section className="j-xs">
         	<div>
         		<div className="j-x1">
-        			<h1>致力于提升中国男士穿衣品味</h1>        			
+        			<h1>致力于提升中国男士穿衣品味</h1>
         		</div>
         		<p>第三期我们抱着一颗勇敢的心,</p>
         		<p>就向“直男中的战斗机”</p>

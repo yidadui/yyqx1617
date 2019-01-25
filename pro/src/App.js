@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
 import AnimatedRouter from 'react-animated-router';
 import 'react-animated-router/animate.css';
 import './App.css';
@@ -35,8 +35,6 @@ class App extends Component {
 						<Route path="/guwen" component={Guwen}></Route>
 						<Route path="/xingnan" component={Xingnan}></Route>
 						<Route path="/cart" component={Cart}></Route>
-
-
 		        <Redirect to="/home"/>
 		  </AnimatedRouter>
 
