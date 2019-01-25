@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
 import Footer from './Footer';
 import IScroll from 'iscroll/build/iscroll-probe';
 import ReactIScroll from 'reactjs-iscroll';
@@ -14,13 +14,19 @@ class Home extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
-    data: ['1', '2', '3'],
+    data: [
+			'https://up.enterdesk.com/edpic/27/7e/50/277e50a5a7bed32ba5fb37ac3aebd66a.jpg',
+			 'https://up.enterdesk.com/edpic/3b/99/e8/3b99e8d7022d153a5a3a6743648daa9d.png',
+			'https://up.enterdesk.com/edpic/7b/19/ed/7b19edaab1b6c6b956f0a6d26439b904.jpg'],
     imgHeight: 176,
   	}
 	}
+	gocart(){
+		this.props.history.push("/Cart");
+	}
   xing(){
   	this.props.history.push("/xingnan")
-  }	
+  }
   wen(){
   	this.props.history.push("/guwen")
   }
@@ -32,7 +38,7 @@ class Home extends React.Component {
       <div className="Home">
         <header className="jhe">
         	<img src={J03}/>
-        	<span className="iconfont">&#xe503;</span>
+        	<span className="iconfont" onClick={this.gocart.bind(this)}>&#xe503;</span>
         	<span className="iconfont"></span>
         </header>
         <section className="jse">
@@ -46,10 +52,10 @@ class Home extends React.Component {
 	            <a
 	              key={val}
 	              href="javascript:void(0)"
-	              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+	              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight+"px" }}
 	            >
 	              <img
-	                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+	                src={val}
 	                alt=""
 	                style={{ width: '100%', verticalAlign: 'top' }}
 	                onLoad={() => {
@@ -85,18 +91,13 @@ class Home extends React.Component {
 	        		</ul>
         		</div>
         	</div>
-        </div>	
+        </div>
         </section>
         <Footer/>
       </div>
     );
   }
   componentDidMount(){
-  	setTimeout(() => {
-      this.setState({
-        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
-      });
-    }, 100);
   	var myscroll=new IScroll('section',{
   		click:true,
     	vscrollbars: false,

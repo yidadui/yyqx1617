@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
 import Footer from './Footer';
 import '../styles/Wode.css';
 import IScroll from 'iscroll/build/iscroll-probe';
@@ -10,14 +10,14 @@ import ReactIScroll from 'reactjs-iscroll';
 
 
 class Wode extends Component {
-  
+
   componentDidMount(){
   	var myscroll=new IScroll('section',{
   		click:true,
     	vscrollbars: false,
     	mouseWheel: true,
   	})
-  	
+
   }
   render() {
     return (
@@ -83,7 +83,7 @@ class Wode extends Component {
                       </NavLink>
 
                 </div>
-                
+
             </div>
         </section>
         <Footer/>

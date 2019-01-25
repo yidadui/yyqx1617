@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+import AnimatedRouter from 'react-animated-router';
+import 'react-animated-router/animate.css';
 import './App.css';
 import Home from './components/Home';
 import Danpin from './components/Danpin';
@@ -8,6 +10,7 @@ import Wode from './components/Wode';
 import Login from './components/Login';
 import Register from './components/Register';
 import Detail from './components/detail';
+import style from './styles/iconfont.css';
 import Chaopin from './components/Chaopin';
 import Guwen from './components/Guwen';
 import Xingnan from './components/Xingnan';
@@ -20,9 +23,7 @@ class App extends Component {
       <div className="App">
 
 
-      	{/*<section>*/}
-
-      		<Switch>
+      <AnimatedRouter>
 		        <Route path="/home" component={Home}></Route>
 		        <Route path="/danpin" component={Danpin}></Route>
 		        <Route path="/dapei" component={Dapei}></Route>
@@ -34,11 +35,13 @@ class App extends Component {
 						<Route path="/guwen" component={Guwen}></Route>
 						<Route path="/xingnan" component={Xingnan}></Route>
 						<Route path="/cart" component={Cart}></Route>
+<<<<<<< HEAD
 						
 
+=======
+>>>>>>> 5b93ec0f19c3aaa9035425c71e224c5dc3a66ee0
 		        <Redirect to="/home"/>
-		        </Switch>
-      	{/*</section>*/}
+		  </AnimatedRouter>
 
 
       </div>

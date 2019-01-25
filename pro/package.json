@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-animated-router": "^0.1.11",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react-scripts": "2.1.3",
+    "react-transition-group": "^2.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +33,6 @@
     "reactjs-iscroll": "^0.3.2",
     "redux": "^4.0.1",
     "swiper": "^4.4.6"
-  }
+  },
+  "homepage":"."
 }

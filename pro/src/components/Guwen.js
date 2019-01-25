@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import {HashRouter as Router,Route} from 'react-router-dom';
 import '../styles/Guwen.css';
 import IScroll from 'iscroll/build/iscroll-probe';
 import ReactIScroll from 'reactjs-iscroll';

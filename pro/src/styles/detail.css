@@ -2,7 +2,7 @@
   flex:1;
   display: flex;
   flex-direction: column;
-
+  height:100vh;
 }
 .ld-detail header{
   font:normal 3vh/8vh "微软雅黑";
@@ -16,18 +16,20 @@
   background: #fff;
 }
 .ld-detail b {
-    font:normal 3vh/8vh "微软雅黑";
+    font:normal 6.5vh/6.5vh "微软雅黑";
   position:fixed;;
   top:0;
-  left:8vw;
+  left:3vw;
   z-index: 11;
+  border-radius: 50%;
 }
-.ld-detail strong {
-    font:normal 3vh/8vh "微软雅黑";
+.ld-detail strong  span{
+  font:normal 6vh/8vh "微软雅黑";
   position:fixed;
   top:0;
   right:8vw;
   z-index: 11;
+    border-radius: 50%;
 }
 .ld-detail section{
   overflow: auto;
