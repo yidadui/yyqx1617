@@ -35,11 +35,10 @@ class App extends Component {
 						<Route path="/guwen" component={Guwen}></Route>
 						<Route path="/xingnan" component={Xingnan}></Route>
 						<Route path="/cart" component={Cart}></Route>
-<<<<<<< HEAD
+
 						
 
-=======
->>>>>>> 5b93ec0f19c3aaa9035425c71e224c5dc3a66ee0
+
 		        <Redirect to="/home"/>
 		  </AnimatedRouter>
 
